@@ -3,13 +3,16 @@ import React, { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import '../globals.css';
+import NavBar from '../navBar/page';
 
 export default function Intro() {
  
 
   return (
     <div className="backgroundImage">
-    <div className="introContainer">
+          <NavBar/>
+
+    <div >
     
         <div className='typewriter'>
       <Typewriter

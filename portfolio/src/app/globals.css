@@ -1,15 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+.sphereDiv{
+  background: rgba(30, 30, 30, 1);
+
+}
+
+.sphere{
+  position: absolute;
+  top:1700px;
+  left:30%;
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 100%;
+  height: 600px;
+  border-width: 0.5px; /* Corrected typo from "border-width: 10cap" */
+  border-color: #ffffff; /* Added property to specify border color */
+  border-style: solid; 
+}
+
+.skills{
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size:90px;
+  top:1500px;
+  left:40%;
+}
+
+.aboutDiv1{
+  position: absolute;
+  left:30%;
+  top:1200px;
+ 
+}
+.aboutDiv2{
+  position: absolute;
+  left:60%;
+  top:1200px;
+ 
+}
+
+.info{
+  position: relative;
+  font-family: 'Roboto Mono', monospace;
+  font-size:50px;
+  left: 40px;
+}
+#ten{
+  position: relative;
+  left: 100px;
+}
+.infoDis{
+  
+  font-family: 'Raleway', sans-serif;
+  font-size:30px;
+ 
+}
+.bio{
+  width: 80%;
+  position: absolute;
+  left:100px;
+  font-family: 'Raleway', sans-serif;
+  font-size:30px;
+  top:300px;
+}
+.profile2{
+  border-radius: 200px;
+position: relative;
+right:-42%;
+top:150px;
+
+  /* filter: blur(10px); */
+}
+
+.backgroundImage2 {
+  position: absolute;
+  
+ width: 100%;
+ height: 100%;
+  background-image: url('https://wallpapers.com/images/hd/black-and-white-space-cfkf3021h0hfg3rb.jpg');
+  background-size:contain;
+  background-attachment:fixed;
+}
+
+
+.title {
+  position: absolute;
+  font-size:60px;
+  font-family: 'Raleway Dots', cursive;
+  top: 25%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+}
+
+
   .typewriter{
     position:absolute;
    left:700px;
-   top:200px;
-   font-family: 'Saira Condensed', sans-serif;
+   top:300px;
+   font-family: 'Raleway Dots', cursive;
    font-size: 60px;
    /* color: #B59410; */
    /* background-color: black; */
@@ -30,15 +127,12 @@ top:150px;
 }
 .backgroundImage {
   position: absolute;
-   /* top: 0;
-  left: 0;  */
+  
  width: 100%;
- height: 80%;
+ height: 100%;
   background-image: url('https://wallpaperset.com/w/full/c/1/4/427159.jpg');
   background-size:contain;
-  /* background-position: center; */
-  /* filter: blur(10px); */
-  /* Additional styles for the background image */
+  
 }
 
 navText {
@@ -74,4 +168,38 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/* Importing google font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+.text-shpere {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.tagcloud {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.3em;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+    color: #ff6347;
 }
