@@ -4,12 +4,16 @@ import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import '../globals.css';
 import NavBar from '../navBar/page';
-
+import { useRouter } from 'next/navigation'
 export default function Intro() {
- 
+  const router = useRouter();
+
+  const handleNavigation = () => {
+    router.push('/about');
+  };
 
   return (
-    <div className="backgroundImage">
+    <div onClick={handleNavigation} className="backgroundImage">
           <NavBar/>
 
     <div >

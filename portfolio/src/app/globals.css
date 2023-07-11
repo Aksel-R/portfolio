@@ -1,29 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+.toolsIcons{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ padding: 100px;
+ left: -20%;
+}
+
+.databasesIcons{
+   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ padding: 100px;
+ left: -20%;
+}
+
+.Mtools{
+  position: relative;
+ 
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  left: -30%;
+  padding-top: 100px;
+  border-bottom: 2px solid #ffffff;
+  width: 70%;
+}
+
+.bases{
+  position: relative;
+ 
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  left: -30%;
+  padding-top: 190px;
+  border-bottom: 2px solid #ffffff;
+  width: 70%;
+
+}
+
+#techGrades2{
+  position: relative;
+left:450px
+}
+
+
+#techGrades{
+  position: relative;
+  left:-250px;
+}
+
+
+.techNames {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ysabeau SC', sans-serif;
+}
+
+.frontDiv{
+  position: relative;
+  padding: 100px;
+  left:-220px
+}
+
+
+#frontDiv{
+  position: relative;
+  padding: 100px;
+  left:-700px
+}
+
+#backDiv{
+  position: relative;
+  padding: 100px;
+  top:220px;
+  left:-700px
+}
+
+#front {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  left: 20%;
+  padding: 20px;
+  border-bottom: 2px solid #ffffff;
+  width: 70%
+}
+
+
+#circle{
+  position: absolute;
+  width: 200%;
+  left:-50%;
+}
+/* 
 .sphereDiv{
   background: rgba(30, 30, 30, 1);
 
-}
+} */
 
 .sphere{
   position: absolute;
   top:1700px;
   left:30%;
-  background: rgba(30, 30, 30, 0.8);
+  /* background: rgba(30, 30, 30, 0.8); */
   border-radius: 100%;
   height: 600px;
-  border-width: 0.5px; /* Corrected typo from "border-width: 10cap" */
-  border-color: #ffffff; /* Added property to specify border color */
-  border-style: solid; 
+  /* border-width: 0.5px; 
+  border-color: #ffffff;
+  border-style: solid;  */
 }
 
 .skills{
@@ -85,7 +185,7 @@ top:150px;
   
  width: 100%;
  height: 100%;
-  background-image: url('https://wallpapers.com/images/hd/black-and-white-space-cfkf3021h0hfg3rb.jpg');
+  /* background-image: url('https://wallpapers.com/images/hd/black-and-white-space-cfkf3021h0hfg3rb.jpg'); */
   background-size:contain;
   background-attachment:fixed;
 }
