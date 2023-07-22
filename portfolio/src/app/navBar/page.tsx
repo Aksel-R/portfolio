@@ -32,8 +32,8 @@ export default function NavBar() {
       <nav>
         <NavLink href="/" title="Home" className="mx-4" />
         <NavLink href="/about" title="About" className="mx-4" />
-        <NavLink href="/projects" title="Projects" className="mx-4" />
-        <NavLink href="/articles" title="Articles" className="mx-4" />
+        <NavLink href="/Projects" title="Projects" className="mx-4" />
+        <NavLink href="/Articles" title="Articles" className="mx-4" />
       </nav>
       <div className="absolute left-[50%] top-5 transform -translate-x-1/2">
         <Image src={require("../../../public/1688400073569.png")} alt="Description of the image" width={

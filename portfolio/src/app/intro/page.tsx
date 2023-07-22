@@ -5,6 +5,7 @@ import Image from 'next/image';
 import '../globals.css';
 import NavBar from '../navBar/page';
 import { useRouter } from 'next/navigation'
+import Footer from "../Footer/page";
 export default function Intro() {
   const router = useRouter();
 
@@ -13,10 +14,12 @@ export default function Intro() {
   };
 
   return (
-    <div onClick={handleNavigation} className="backgroundImage">
-          <NavBar/>
 
     <div >
+    <div  className="backgroundImage">
+          <NavBar/>
+
+    <div className='intro' >
     
         <div className='typewriter'>
       <Typewriter
@@ -35,6 +38,19 @@ export default function Intro() {
           alt="Profile Image"
         />
       </div>
+      <div className='button-container' >
+  <div className="btn btn-two ">
+    <span>My resume</span>
+  </div>
+
+<div className="box-2">
+  <div className="btn btn-two">
+    <span>Hire me !</span>
+  </div>
+  </div>
+</div>
+    </div>
+  
     </div>
   );
 }

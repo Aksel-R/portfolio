@@ -10,7 +10,7 @@ import Bootstrap from "./tech/Bootstrap.png"
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
-
+import valeria from "./valeria.png"
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
@@ -43,6 +43,10 @@ import mysql from './tech/mysql.png'
 import git from "./tech/git.png"
 import trello from "./tech/trello.png"
 import miro from "./tech/miro.png"
+import zara from "./zara.png"
+import linkedout from "./linked-out.png"
+import ReactV from "./reactjsVSreactnative.jpg"
+import chatgpt from "./chatgpt.jpg"
 // import meta from "./company/meta.png";
 // import shopify from "./company/shopify.png";
 // import starbucks from "./company/starbucks.png";
@@ -59,8 +63,10 @@ export {
 //   mobile,
 //   web,
 //   github,
-//   menu,
-//   close,
+//   menu
+chatgpt,
+ReactV,
+valeria,
   css,
   docker,
   figma,
@@ -96,5 +102,7 @@ export {
   postGres,
   mysql,
   trello,
-  miro
+  miro,
+  zara,
+  linkedout
 };

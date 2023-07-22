@@ -7,18 +7,16 @@ const TextSphere: React.FC = () => { // Added type annotation for functional com
   useEffect(() => {
     const container = ".tagcloud";
     const texts = [
-      "HTML",
-      "CSS",
-      "SASS",
-      "JavaScript",
-      "React",
-      "Vue",
-      "Nuxt",
-      "NodeJS",
-      "Babel",
-      "ES6",
-      "GIT",
-      "GITHUB",
+      "Negotiation",
+      "Fast learning",
+      "Problem-solving",
+      "Research skills",
+      "Management",
+      "SRUM methadology",
+      "Team player",
+      "consistency",
+      "commitment",
+      
     ];
 
     const options = {
@@ -32,8 +30,8 @@ const TextSphere: React.FC = () => { // Added type annotation for functional com
   }, []);
 
   return (
-    <div className="text-sphere">
-      <span className="tagcloud" /> {/* Self-closing tag */}
+    <div className="soft">
+      <span  className="tagcloud" />
     </div>
   );
 };
