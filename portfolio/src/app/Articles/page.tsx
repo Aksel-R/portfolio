@@ -1,27 +1,25 @@
 "use client"
-import React, { useCallback } from 'react';
+import React from 'react';
+import medium from "../../../public/mediumLogo.png"
 import NavBar from '../navBar/page';
 import Footer from '../Footer/page';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import particlesConfig from '../../../particles-config';
+
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from "../../../utils/motion";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import '../globals.css';
-import { projects } from '../../../constants';
 import AnimatedTextWord from '../animatedText';
 import { articles } from '../../../constants';
 import Image from 'next/image';
-
+import BackG from '@/background/page';
 
 function Cards({
-  index,
+  index=0,
   name = "",
   description = "",
   tags = [],
-  image,
+  image="",
   source_code_link = "",
 }) {
   return (
@@ -39,9 +37,9 @@ function Cards({
         <div className="relative w-full h-[230px] rounded-2xl overflow-hidden">
           <Image
             src={image}
-            alt="project_image"
+            alt="article_image"
             className="w-full h-full object-cover rounded-2xl"
-            layout="fill"
+            fill={true}
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -49,7 +47,7 @@ function Cards({
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <GitHubIcon style={{ fontSize: 30, color: "#fff", backgroundColor:"#000", borderRadius:"100%" }} />
+              <Image alt="logo"  src={medium} style={{ fontSize: 30, color: "#fff", backgroundColor:"#000", borderRadius:"100%" }} />
             </div>
           </div>
         </div>
@@ -62,7 +60,7 @@ function Cards({
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag, idx) => (
             <p
-              key={`${name}-${tag.name}-${idx}`}
+              key={`${idx}`}
               className={`text-sm ${tag.color}`}
             >
               #{tag.name}
@@ -75,24 +73,13 @@ function Cards({
 }
 
 function Articles() {
-    const particlesInit = useCallback(async (engine) => {
-        await loadFull(engine);
-      }, []);
-    
-      const particlesLoaded = useCallback(async (container: Function | undefined) => {
-        await console.log(container);
-      }, []);
+  
     
       return (
         <div>
         
           <div>
-            <Particles
-              id="tsparticles"
-              init={particlesInit}
-              loaded={particlesLoaded}
-              options={particlesConfig}
-            />
+          <BackG/>
     
             <NavBar />
           </div>

@@ -11,28 +11,13 @@ import "../globals.css";
 import Experiences from "../experiences/page";
 import TextSphere from "../tech-sphere/page";
 import Footer from "../Footer/page";
+import BackG from "@/background/page";
 export default function About() {
-  const particlesInit = useCallback(async (engine) => {
-    
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(
-    async (container: Function | undefined) => {
-      await console.log(container);
-    },
-    []
-  );
 
   return (
     <div>
       <div className="backgroundImage2">
-        <Particles
-          id="tsparticles"
-          init={particlesInit}
-          loaded={particlesLoaded}
-          options={particlesConfig}
-        />
+      <BackG/>
         <NavBar />
         <h1 className="title">Make it work, make it right, make it fast!</h1>
 

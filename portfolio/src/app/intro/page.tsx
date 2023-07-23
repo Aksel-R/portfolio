@@ -6,6 +6,8 @@ import '../globals.css';
 import NavBar from '../navBar/page';
 import { useRouter } from 'next/navigation'
 import Footer from "../Footer/page";
+import BackG from '@/background/page';
+import resume from "../../../public/resume/resume.pdf"
 export default function Intro() {
   const router = useRouter();
 
@@ -16,7 +18,8 @@ export default function Intro() {
   return (
 
     <div >
-    <div  className="backgroundImage">
+    <div  className="backgroundImage2">
+      <BackG/>
           <NavBar/>
 
     <div className='intro' >
@@ -38,14 +41,23 @@ export default function Intro() {
           alt="Profile Image"
         />
       </div>
-      <div className='button-container' >
+      <div className='introB'>
+      <div className='button-container2' >
   <div className="btn btn-two ">
+    <a
+     href={resume}
+     download="Yassin's resume"
+     target="_blank"
+     rel="none"
+    >
     <span>My resume</span>
+    </a>
   </div>
 
-<div className="box-2">
+<div className="box-3">
   <div className="btn btn-two">
     <span>Hire me !</span>
+  </div>
   </div>
   </div>
 </div>

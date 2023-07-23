@@ -28,6 +28,26 @@ body {
   --accent: var(--red);
 }
 
+.introB{
+  position: relative;
+  left: 500px;
+  width: 50px;
+  top: 150px;
+}
+
+.button-container2{
+  display:inline-block;
+  margin: 5px;
+  padding: 0px;
+}
+
+.box-3{
+position: relative;
+left: 300px;
+top: -80px;
+}
+
+
 .AniText{
   font-size: 100px;
   position: relative;
@@ -143,8 +163,8 @@ div[class*=box] {
   z-index: 1;
   transition: all 0.5s;
   border: 1px solid rgba(255,255,255,0.2);
-  background-color:rgba(92, 9, 148, 0.3);
-  border-radius: 3%;
+  background-color:rgba(0, 0, 0, 0.3);
+  border-radius: 0%;
 }
 .btn-two::after {
   content: '';
@@ -157,7 +177,7 @@ div[class*=box] {
   transition: all 0.5s;
   border: 1px solid rgba(255,255,255,0.2);
   background-color: rgba(255,255,255,0.1);
-  border-radius: 3%;
+  border-radius: 0%;
 }
 .btn-two:hover::before {
   transform: rotate(-45deg);
@@ -274,7 +294,7 @@ circle {
 
 ::-webkit-scrollbar {
   height: 12px;
-  width: 5px;
+  width: 0px;
   background: var(--background);
 }
 

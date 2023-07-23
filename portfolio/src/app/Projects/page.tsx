@@ -1,10 +1,7 @@
 "use client"
-import React, { useCallback } from 'react';
+import React from 'react';
 import NavBar from '../navBar/page';
 import Footer from '../Footer/page';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import particlesConfig from '../../../particles-config';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from "../../../utils/motion";
@@ -12,15 +9,21 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import '../globals.css';
 import { projects } from '../../../constants';
 import AnimatedTextWord from '../animatedText';
-
+import BackG from '@/background/page';
 import Image from 'next/image';
 
+type card = {
+ 
+  image: string;
+  index: number;
+};
+
 function Cards({
-  index,
+  index=0 ,
   name = "",
   description = "",
   tags = [],
-  image,
+  image = "",
   source_code_link = "",
 }) {
   return (
@@ -74,24 +77,13 @@ function Cards({
 }
 
 function Projects() {
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container: Function | undefined) => {
-    await console.log(container);
-  }, []);
+ 
 
   return (
     <div>
     
       <div>
-        <Particles
-          id="tsparticles"
-          init={particlesInit}
-          loaded={particlesLoaded}
-          options={particlesConfig}
-        />
+      <BackG/>
 
         <NavBar />
       </div>
