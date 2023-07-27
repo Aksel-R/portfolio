@@ -135,7 +135,7 @@ export default function About() {
             </div>
             <div className="box-2">
               <div className="btn btn-two">
-                <span style={{fontSize:"20px"}} >Hire me !</span>
+                <a href="/Contact" target="_blank"><span style={{fontSize:"20px"}} >Hire me !</span></a>
               </div>
             </div>
             <div>

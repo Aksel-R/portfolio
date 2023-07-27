@@ -69,7 +69,7 @@ export default function NavBar() {
         <a  href="https://www.linkedin.com/in/yassin-rezgui-364960193/" target="_blank"> <LinkedInIcon style={{ fontSize: 60 }}/></a>
         <a href="https://github.com/Aksel-R" target="_blank"><GitHubIcon style={{ fontSize: 60 }}/></a>
         <a href="https://www.facebook.com/yassin.rezgui.714?mibextid=ZbWKwL" target="_blank"><FacebookIcon style={{ fontSize: 60 }}/></a>
-        <a href="/" target="_blank"><EmailIcon style={{ fontSize: 60 }}/></a>
+        <a href="/Contact" target="_blank"><EmailIcon style={{ fontSize: 60 }}/></a>
         </div>
       </nav>
     </header>

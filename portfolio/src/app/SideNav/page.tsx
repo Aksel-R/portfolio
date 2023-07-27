@@ -46,7 +46,7 @@ function SideNav(){
          <NavLink href="/Articles" title="Articles" className="my-4" />
          </div>
          <div className='pb-4'>
-         <NavLink href="/articles" title="Contact" className="my-4" />
+         <NavLink href="/Contact" title="Contact" className="my-4" />
          </div>
          
 
