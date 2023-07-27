@@ -6,7 +6,7 @@ import Image from "next/image";
 interface CardsProps {
   index: number;
   name: string;
-  icon: string;
+  icon;
 }
 
 const Cards: React.FC<CardsProps> = ({ index, name, icon }) => {
@@ -22,7 +22,7 @@ const Cards: React.FC<CardsProps> = ({ index, name, icon }) => {
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        
       >
         <Image
           src={icon}
@@ -30,7 +30,7 @@ const Cards: React.FC<CardsProps> = ({ index, name, icon }) => {
           className='w-16 h-16 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white text-[20px]  '>
           {name}
         </h3>
       </div>

@@ -18,7 +18,7 @@ export default function Footer({style=""}) {
   return (
     <div>
       <footer className={style}>
-        <p style={{ color: "white", fontSize: "90"}}>© 2022 Aksel-R. This site is protected by divine laws</p>
+        <p style={{ color: "white", fontSize: "90"}}>© 2022 Aksel-R | All Rights Reserved</p>
 
         <nav>
           <div>

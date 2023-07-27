@@ -20,8 +20,8 @@ const TextSphere: React.FC = () => { // Added type annotation for functional com
     ];
 
     const options = {
-      radius: 300,
-      maxSpeed: "normal",
+      radius: 150,
+      maxSpeed: "fast",
       initSpeed: "normal",
       keep: true,
     };

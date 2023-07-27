@@ -28,26 +28,210 @@ body {
   --accent: var(--red);
 }
 
-.introB{
+/* .NavLink{
+  display: none
+}
+ */
+.introFooter{
+  display: none;
   position: relative;
-  left: 500px;
-  width: 50px;
-  top: 150px;
+  top: 1000px;
+  left: 60px;
+}
+.Micon{
+  display: none;
+
+  
+}
+.sideN{
+  display: none;
+ 
+}
+.title {
+  position: relative;
+  font-size:60px;
+  font-family: 'Raleway Dots', cursive;
+
+  right: -580px;
+  /* transform: translate(-50%, -50%); */
+  width: 500px;
+  padding-bottom: 120px;
+ top: 100px;
+ 
+}
+.bio{
+  width: 80%;
+  position: relative;
+  left:100px;
+  font-family: 'Raleway', sans-serif;
+  font-size:30px;
+  padding-bottom: 100px;
+  top: 180px;
+ 
+}
+.aboutDiv1{
+  position: absolute;
+  left:30%;
+  top:1550px;
+ 
+}
+.aboutDiv2{
+  position: absolute;
+  left:60%;
+  top:1550px;
+ 
+}
+.info{
+  position: relative;
+  font-family: 'Roboto Mono', monospace;
+  font-size:50px;
+  left: 40px;
+}
+#ten{
+  position: relative;
+  left: 100px;
+}
+.infoDis{
+  
+  font-family: 'Raleway', sans-serif;
+  font-size:30px;
+ 
+}
+.skills{
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  font-size:90px;
+  top:1800px;
+  left:40%;
+}
+.sphere{
+  position: absolute;
+  top:1900px;
+  left:30%;
+  /* background: rgba(30, 30, 30, 0.8); */
+  border-radius: 100%;
+  height: 600px;
+  /* border-width: 0.5px; 
+  border-color: #ffffff;
+  border-style: solid;  */
+}
+.frontDiv{
+  position: relative;
+  padding: 100px;
+  left:-220px
+}
+#frontDiv{
+  position: relative;
+  padding: 100px;
+  left:-700px
 }
 
-.button-container2{
-  display:inline-block;
-  margin: 5px;
-  padding: 0px;
+#techGrades{
+  position: relative;
+  left:-250px;
 }
 
-.box-3{
-position: relative;
-left: 300px;
-top: -80px;
+#backDiv{
+  position: relative;
+  padding: 100px;
+  top:220px;
+  left:-700px
+}
+
+#techGrades2{
+  position: relative;
+left:450px
 }
 
 
+.bases{
+  position: relative;
+ 
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  left: -30%;
+  padding-top: 190px;
+  border-bottom: 2px solid #ffffff;
+  width: 70%;
+
+}
+
+.Mtools{
+  position: relative;
+ 
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  left: -30%;
+  padding-top: 100px;
+  border-bottom: 2px solid #ffffff;
+  width: 70%;
+}
+
+.education {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 90px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* width: 100vw; */
+  text-align: center;
+  margin: 0 auto;
+  right: 250px;
+}
+
+.spheres{
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 100%;
+  border-width: 0.5px; 
+  border-color: #ffffff;
+  border-style: solid;
+  width: 400px;
+}
+
+/* .item{
+  position: relative;
+  right :150px;
+} */
+
+.progress {
+  position: relative;
+  top: 0px;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  left: 330px;
+ 
+}
+
+.box-2{
+  position: relative;
+  top:-18px;
+}
+
+.firstB{
+  position: relative;
+  height: 34%;
+  width: 100%; 
+ display: flex;
+  justify-content: left;
+  align-items: center;
+   top: 200px;
+}
+.footer-style {
+  /* display: flex; */
+  /* width: 130%;  */
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  background-color:rgba(36, 36, 36, 0.3);
+  /* padding: 20px; */
+  margin-top: 80px;
+  left: -25%;
+}
 .AniText{
   font-size: 100px;
   position: relative;
@@ -59,15 +243,327 @@ top: -80px;
   left: 300px;
   width: 900px;
 }
+.profile{
+  border-radius: 200px;
+position: relative;
+right:-400px;
+top:50px;
+
+  /* filter: blur(10px); */
+}
+
+
+.typewriter{
+  position:absolute;
+ left:700px;
+ top:50px;
+ font-family: 'Raleway Dots', cursive;
+ font-size: 60px;
+ /* color: #B59410; */
+ /* background-color: black; */
+ width: 500px;
+}
+
+.introB{
+  position: relative;
+  left: 650px;
+  width: 50px;
+  top: 150px;
+}
+
+
+@media screen and (max-width :816px) {
+  .introFooter{
+    display: flex;
+    position: relative;
+    top: 1300px;
+ 
+  }
+  .introB{
+    position: relative;
+    left: 60px;
+    width: 50px;
+    top: 600px;
+   
+  }
+  
+  
+  .typewriter{
+    position:absolute;
+   left:100px;
+   top:450px;
+   font-family: 'Raleway Dots', cursive;
+   font-size: 60px;
+   /* color: #B59410; */
+   /* background-color: black; */
+   width: 400px;
+   
+  }
+  .profile{
+    border-radius: 200px;
+  position: relative;
+  right:-170px;
+  top:50px;
+  
+    /* filter: blur(10px); */
+  }
+  .AniText{
+    font-size: 20px;
+    position: relative;
+     padding: 50px;
+    justify-content: right;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 2px solid #ffffff;
+    left: 0px;
+    width: 400px;
+  }
+  .footer-style {
+    /* display: flex; */
+    width: 100%; 
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    background-color:rgba(36, 36, 36, 0.3);
+    /* padding: 20px; */
+    margin-top: 80px;
+    left: 0%;
+  }
+  .firstB{
+    position: relative;
+    height: 34%;
+    width: 100%; 
+   display: flex;
+    justify-content: center;
+    align-items: center;
+     top: 130px;
+  }
+  .box-2{
+    position: relative;
+    top:45px;
+  }
+  
+  .progress {
+    position: relative;
+    top: -150px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0px;
+    left: 420px;
+   
+  }
+
+  .spheres{
+    position: relative;
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 100%;
+    border-width: 0.5px; 
+    border-color: #ffffff;
+    border-style: solid;
+    width: 350px;
+    left: 50px;
+  }
+
+  .education {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* width: 100vw; */
+    text-align: center;
+    margin: 0 auto;
+    right: 0px;
+  }
+
+  .Mtools{
+    position: relative;
+   
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    left: 20%;
+    padding: 20px;
+    border-bottom: 2px solid #ffffff;
+    width: 70%;
+  }
+  
+
+  .bases{
+    position: relative;
+   
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    left: 20%;
+    padding: 20px;
+    border-bottom: 2px solid #ffffff;
+    width: 70%;
+  
+  }
+
+  #techGrades2{
+    position: relative;
+  left:0px
+  }
+
+  #backDiv{
+    position: relative;
+    padding: 0px;
+    top:0px;
+    left:0px
+  }
+  #techGrades{
+    position: relative;
+    left:0px;
+  }
+  #frontDiv{
+    position: relative;
+    padding: 0px;
+    left:0px;
+    padding-top: 100px;
+    
+  }
+  .frontDiv{
+    position: relative;
+    padding: 0px;
+    padding-top: 50px;
+    left:0px
+  }
+  .sphere{
+    position: absolute;
+    top:2400px;
+    left:0%;
+    /* background: rgba(30, 30, 30, 0.8); */
+    border-radius: 100%;
+    height: 600px;
+    /* border-width: 0.5px; 
+    border-color: #ffffff;
+    border-style: solid;  */
+  }
+  .skills{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size:90px;
+    top:2300px;
+    left:15%;
+  }
+  .info{
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    font-size:40px;
+    left: 40px;
+  }
+  #ten{
+    position: relative;
+    left: 75px;
+  }
+  .infoDis{
+    
+    font-family: 'Raleway', sans-serif;
+    font-size:25px;
+    left: 60px;
+   
+  }
+  .aboutDiv1{
+    position: absolute;
+    left:25%;
+    top:2000px;
+   
+  }
+  .aboutDiv2{
+    position: absolute;
+    left:20%;
+    top:2150px;
+   
+  }
+
+  .bio{
+    width: 400px;
+    position: relative;
+    left:-9.5em;
+    font-family: 'Raleway', sans-serif;
+    font-size:20px;
+    padding-bottom: 100px;
+    top: -180px;
+   
+  }
+  .title{
+    position: relative;
+    font-size:35px;
+    font-family: 'Raleway Dots', cursive;
+  
+    right: 2.8em;
+    /* transform: translate(-50%, -50%); */
+    width: 250px;
+    padding-bottom: 120px;
+   top: -150px;
+  }
+  /* .navAbout{
+    position:absolute;
+  
+  } */
+  .aboutTDiv{
+    padding:200px;
+  }
+  .Micon{
+    display: flex;
+    position: absolute;
+    top:0em;
+    left: 0em;
+   
+    
+  }
+  .sideNDiv{
+    position: relative;
+    background-color: rgba(12, 12, 12, 0.8);
+    
+    padding:50px;
+   
+    
+    
+  }
+  .sideN{
+    position: relative;
+    left: 7em;
+    top:50px;
+    display: flex;
+  }
+  .Cicons{
+    display: none;
+  }
+  .tlf{
+    display: flex;
+  position: relative;
+  top: -30px;
+    width: 70px;
+    right: 0em;
+  }
+ 
+  .NavLink{
+    display: none;
+  }
+}
+
+
+.button-container2{
+  display:inline-block;
+  margin: 5px;
+  padding: 0px;
+}
+
+
+
+
+
 
 .PFooter{
   position: relative;
- top: 1000px;
+
 }
-.center-container {
-  position: absolute;
-  left: 250px;
-}
+
 
 
 .button-container {
@@ -88,38 +584,20 @@ top: -80px;
 }
 
 
-.footer-style {
-  /* display: flex; */
-  width: 145%; 
-  position: relative;
-  justify-content: left;
-  text-align: center;
-  background-color:rgba(92, 9, 148, 0.3);
-  padding: 20px;
-  margin-top: 40px;
-  left: -45%;
-}
+
 .footer-styleP {
   /* display: flex; */
   width: 100%; 
   position: relative;
   justify-content: center;
   text-align: center;
-  background-color:rgba(92, 9, 148, 0.3);
+  background-color:rgba(49, 49, 49, 0.3);
   padding: 20px;
   margin-top: 40px;
   left: 0px;
 }
 
-.firstB{
-  position: relative;
-  height: 33.33%;
-  width: 100%; 
- display: flex;
-  justify-content: left;
-  align-items: center;
-   top: 200px;
-}
+
 
 div[class*=box] {
   height: 33.33%;
@@ -241,6 +719,7 @@ div[class*=box] {
   top: 70px;
   font-family: 'Raleway', sans-serif;
   font-size:50px;
+
 }
 
 
@@ -264,14 +743,7 @@ font-size:15px;
 }
 
 
-.progress {
-  position: sticky;
-  top: 0;
-  width: 80px;
-  height: 80px;
-  margin: 0;
-  padding: 0;
-}
+
 
 .progress svg {
   transform: translateX(-100px) rotate(-90deg);
@@ -333,20 +805,7 @@ section div {
   
   
 }
-.education {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 90px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  /* width: 100vw; */
-  text-align: center;
-  margin: 0 auto;
-  right: 250px;
-}
+
 
 .toolsIcons{
   position: relative;
@@ -366,39 +825,12 @@ section div {
  left: -20%;
 }
 
-.Mtools{
-  position: relative;
- 
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
-  left: -30%;
-  padding-top: 100px;
-  border-bottom: 2px solid #ffffff;
-  width: 70%;
-}
-
-.bases{
-  position: relative;
- 
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
-  left: -30%;
-  padding-top: 190px;
-  border-bottom: 2px solid #ffffff;
-  width: 70%;
-
-}
-
-#techGrades2{
-  position: relative;
-left:450px
-}
 
 
-#techGrades{
-  position: relative;
-  left:-250px;
-}
+
+
+
+
 
 
 .techNames {
@@ -409,25 +841,12 @@ left:450px
   font-family: 'Ysabeau SC', sans-serif;
 }
 
-.frontDiv{
-  position: relative;
-  padding: 100px;
-  left:-220px
-}
 
 
-#frontDiv{
-  position: relative;
-  padding: 100px;
-  left:-700px
-}
 
-#backDiv{
-  position: relative;
-  padding: 100px;
-  top:220px;
-  left:-700px
-}
+
+
+
 
 #front {
   position: relative;
@@ -451,72 +870,16 @@ left:450px
 
 } */
 
-.sphere{
-  position: absolute;
-  top:1700px;
-  left:30%;
-  /* background: rgba(30, 30, 30, 0.8); */
-  border-radius: 100%;
-  height: 600px;
-  /* border-width: 0.5px; 
-  border-color: #ffffff;
-  border-style: solid;  */
-}
 
-.spheres{
-  background: rgba(30, 30, 30, 0.8);
-  border-radius: 100%;
-  border-width: 0.5px; 
-  border-color: #ffffff;
-  border-style: solid;
-  width: 600px;
-}
 
-.skills{
-  position: absolute;
-  font-family: 'Raleway', sans-serif;
-  font-size:90px;
-  top:1500px;
-  left:40%;
-}
 
-.aboutDiv1{
-  position: absolute;
-  left:30%;
-  top:1200px;
- 
-}
-.aboutDiv2{
-  position: absolute;
-  left:60%;
-  top:1200px;
- 
-}
 
-.info{
-  position: relative;
-  font-family: 'Roboto Mono', monospace;
-  font-size:50px;
-  left: 40px;
-}
-#ten{
-  position: relative;
-  left: 100px;
-}
-.infoDis{
-  
-  font-family: 'Raleway', sans-serif;
-  font-size:30px;
- 
-}
-.bio{
-  width: 80%;
-  position: absolute;
-  left:100px;
-  font-family: 'Raleway', sans-serif;
-  font-size:30px;
-  top:300px;
-}
+
+
+
+
+
+
 .profile2{
   border-radius: 200px;
 position: relative;
@@ -537,40 +900,15 @@ top:150px;
 }
 
 
-.title {
-  position: absolute;
-  font-size:60px;
-  font-family: 'Raleway Dots', cursive;
-  top: 25%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  width: 1200px;
-}
 
 
-  .typewriter{
-    position:absolute;
-   left:700px;
-   top:50px;
-   font-family: 'Raleway Dots', cursive;
-   font-size: 60px;
-   /* color: #B59410; */
-   /* background-color: black; */
-   width: 500px;
-  }
+
 .introContainer {
   position: relative;
   height: auto;
   /* Additional styles for the container */
 }
-.profile{
-  border-radius: 200px;
-position: relative;
-right:-400px;
-top:50px;
 
-  /* filter: blur(10px); */
-}
 .backgroundImage {
   position: absolute;
   

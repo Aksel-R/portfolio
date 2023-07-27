@@ -12,11 +12,7 @@ import AnimatedTextWord from '../animatedText';
 import BackG from '@/background/page';
 import Image from 'next/image';
 
-type card = {
- 
-  image: string;
-  index: number;
-};
+
 
 function Cards({
   index=0 ,
@@ -86,7 +82,7 @@ function Projects() {
       <BackG/>
 
         <NavBar />
-      </div>
+       </div>
       <div className='AniText'>
       <AnimatedTextWord text={"Featured projects"}/>
       </div>
@@ -99,9 +95,9 @@ function Projects() {
       </div>
       <div className='PFooter'>
       <Footer style="footer-styleP"/>
-      </div>
+  
+    </div>    </div>
     
-    </div>
   );
 }
 

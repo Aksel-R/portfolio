@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation'
 import Footer from "../Footer/page";
 import BackG from '@/background/page';
 import resume from "../../../public/resume/resume.pdf"
+
 export default function Intro() {
   const router = useRouter();
 
@@ -56,13 +57,16 @@ export default function Intro() {
 
 <div className="box-3">
   <div className="btn btn-two">
-    <span>Hire me !</span>
+   <a href="/about"> <span style={{fontSize:"30px"}}>About me !</span></a>
   </div>
   </div>
   </div>
 </div>
     </div>
-  
+    <div className='introFooter'>
+    <Footer/>
+    </div>
+
     </div>
   );
 }

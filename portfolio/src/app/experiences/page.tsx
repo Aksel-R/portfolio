@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import "../globals.css";
-import LilIcons from "../LilIcons/page";
+
 
 function Item({year=""}) {
   const ref = useRef(null);
@@ -12,7 +12,7 @@ function Item({year=""}) {
   });
 
   return (
-    <div ref={ref}>
+    <div className="item" ref={ref}>
       <figure className="progress">
         <svg id="progress" width="75" height="75" viewBox="0 0 100 100">
           <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
@@ -33,22 +33,23 @@ function Item({year=""}) {
 function Details() {
   return (
     <>
-    <div>
+    <div className="mt-20">
+   
      <h1 id="institut"> Hannibal high school Ariana </h1>
      <Item  year={"2020"} /> 
      <p id="des" >Obtained Baccalaureate degree in science of technology </p>
      </div>
-     <div>
-     <h1  id="institut"> Superior institut of technology ISET KEF </h1>
+     <div className="mt-20">
+     <h1  id="institut"> Superior institut of technology ISET </h1>
      <Item  year={"2021"}  /> 
      <p id="des"> Studied electical engineering </p>
      </div>
-     <div>
-     <h1  id="institut"> Concentrix </h1>
+     <div className="mt-20">
+     <h1  id="institut"> Concentrix Corporation</h1>
      <Item   year={"2022"} /> 
      <p id="des">Worked as a quality analyst</p>
      </div>
-     <div>
+     <div className="mt-20">
      <h1  id="institut"> RebootKamp (RBK)  </h1>
      <Item   year={"2023"} /> 
      <p id="des">Obtained the certificate of a Full-Stack JavaScript developer</p>
