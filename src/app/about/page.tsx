@@ -2,7 +2,7 @@
 import React, { useCallback } from "react";
 
 import NavBar from "../navBar/page";
-// import Tech from "../front-tech/page";
+import Tech from "../front-tech/page";
 import Cards from "../cards/page";
 import { frontend, backEnd, databases, tools } from "../../../constants";
 import "../globals.css";
@@ -67,9 +67,9 @@ export default function About() {
 
         <div className="sphereDiv">
           <div className="sphere">
-            {/* <div className="frontDiv">
+            <div className="frontDiv">
               <Tech />
-            </div> */}
+            </div>
 
             <div id="frontDiv">
               <h1 id="front">Front-End</h1>
