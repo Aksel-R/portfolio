@@ -26,6 +26,7 @@ body {
 
   --background: var(--black);
   --accent: var(--red);
+  background-color: #000000;
 }
 
 .generalInputDiv{
