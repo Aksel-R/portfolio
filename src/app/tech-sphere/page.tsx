@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import TagCloud from "tagcloud"; 
+import TagCloud from "TagCloud"; 
 import "../globals.css";
 import { log } from "console";
 
