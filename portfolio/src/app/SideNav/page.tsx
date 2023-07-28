@@ -1,4 +1,4 @@
-// Import necessary modules and components
+
 import React from 'react';
 
 import { usePathname } from 'next/navigation';
@@ -27,7 +27,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, title, className }) => {
   );
 };
 
-// SideNav component
+
 function SideNav(){
   return (
     <div>

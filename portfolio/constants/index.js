@@ -1,6 +1,5 @@
 import {
-  mobile,
-  backend,
+ 
   ReactV,
   chatgpt,
   web,
@@ -12,7 +11,7 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
+ 
  
   figma,
  
@@ -27,7 +26,7 @@ import {
 front,
 back,
 datab,
-mtl,
+mtools,
 express,
   mongoose,
   sqlz,
@@ -43,7 +42,8 @@ express,
 git,
 valeria,
 zara,
-  linkedout} from "../public/index"
+  linkedout,
+  portfolio} from "../public/index"
 
 export const tools=[
   {
@@ -126,7 +126,7 @@ export const layers =[
   },
   {
     name: "Management tools",
-    icon: mtl,
+    icon: mtools,
   },
 ]
 
@@ -221,9 +221,13 @@ const projects = [
         name: "NodeJS",
         color: "pink-text-gradient",
       },
+      {
+        name: "Socket.IO...",
+        color: "pink-text-gradient",
+      },
     ],
     image: valeria,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/orgs/VALERIA-GALLERY/repositories",
   },
 
   
@@ -231,7 +235,7 @@ const projects = [
   {
     name: "ZARA clone",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This project is about creating an exact replicat of the famous barnd ZARA's website.",
     tags: [
       {
         name: "NextJS",
@@ -242,12 +246,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "MySQL",
+        name: "MySQL...",
         color: "pink-text-gradient",
       },
     ],
     image: zara,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Zara-project",
   },
   {
     name: "LinkedOUT",
@@ -255,7 +259,7 @@ const projects = [
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "NextJS",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
@@ -263,32 +267,32 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "MySQL",
+        name: "MySQL...",
         color: "pink-text-gradient",
       },
     ],
     image: linkedout,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/orgs/task-force-org/repositories",
   },
   {
-    name: "ZARA clone",
+    name: "Personal portfolio",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "In this project i showed my potentials in web developent.",
     tags: [
       {
-        name: "NextJS",
+        name: "TypeScript",
         color: "blue-text-gradient",
       },
       {
-        name: "NodeJS",
+        name: "NextJS",
         color: "green-text-gradient",
       },
       {
-        name: "MySQL",
+        name: "emailjs...",
         color: "pink-text-gradient",
       },
     ],
-    image: valeria,
+    image: portfolio,
     source_code_link: "https://github.com/",
   },
 ]

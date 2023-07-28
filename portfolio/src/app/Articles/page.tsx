@@ -1,25 +1,25 @@
-"use client"
-import React from 'react';
-import medium from "../../../public/mediumLogo.png"
-import NavBar from '../navBar/page';
-import Footer from '../Footer/page';
+"use client";
+import React from "react";
+import medium from "../../../public/mediumLogo.png";
+import NavBar from "../navBar/page";
+import Footer from "../Footer/page";
 
-import { Tilt } from 'react-tilt';
-import { motion } from 'framer-motion';
-import { fadeIn, textVariant } from "../../../utils/motion";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import '../globals.css';
-import AnimatedTextWord from '../animatedText';
-import { articles } from '../../../constants';
-import Image from 'next/image';
-import BackG from '@/background/page';
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../utils/motion";
+
+import "../globals.css";
+import AnimatedTextWord from "../animatedText";
+import { articles } from "../../../constants";
+import Image from "next/image";
+import BackG from "@/background/page";
 
 function Cards({
-  index=0,
+  index = 0,
   name = "",
   description = "",
   tags = [],
-  image="",
+  image = "",
   source_code_link = "",
 }) {
   return (
@@ -47,7 +47,16 @@ function Cards({
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <Image alt="logo"  src={medium} style={{ fontSize: 30, color: "#fff", backgroundColor:"#000", borderRadius:"100%" }} />
+              <Image
+                alt="logo"
+                src={medium}
+                style={{
+                  fontSize: 30,
+                  color: "#fff",
+                  backgroundColor: "#000",
+                  borderRadius: "100%",
+                }}
+              />
             </div>
           </div>
         </div>
@@ -59,10 +68,7 @@ function Cards({
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag, idx) => (
-            <p
-              key={`${idx}`}
-              className={`text-sm ${tag.color}`}
-            >
+            <p key={`${idx}`} className={`text-sm ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
@@ -73,32 +79,28 @@ function Cards({
 }
 
 function Articles() {
-  
-    
-      return (
-        <div>
-        
-          <div>
-          <BackG/>
-    
-            <NavBar />
-          </div>
-          <div className='AniText'>
-          <AnimatedTextWord text={"Featured articles"}/>
-          </div>
-          <div className="center-container">
-          <div className="container mx-auto px-4 sm:px-6 mt-20 flex flex-wrap gap-7">
-            {articles.map((project, index) => (
-              <Cards key={`project-${index}`} index={index} {...project} />
-            ))}
-          </div>
-          </div>
-          <div className='PFooter'>
-          <Footer style="footer-styleP"/>
-          </div>
-        
+  return (
+    <div>
+      <div>
+        <BackG />
+
+        <NavBar />
+      </div>
+      <div className="AniText">
+        <AnimatedTextWord text={"Featured articles"} />
+      </div>
+      <div className="center-container">
+        <div className="container mx-auto px-4 sm:px-6 mt-20 flex flex-wrap gap-7">
+          {articles.map((project, index) => (
+            <Cards key={`project-${index}`} index={index} {...project} />
+          ))}
         </div>
-      );
+      </div>
+      <div className="PFooter">
+        <Footer style="footer-styleP" />
+      </div>
+    </div>
+  );
 }
 
-export default Articles
+export default Articles;

@@ -4,7 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import "../globals.css";
-import { relative } from 'path';
+
 
 export default function Footer({style=""}) {
   // Define an array of social media links with their URLs

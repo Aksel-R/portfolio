@@ -3,7 +3,7 @@ import React from "react";
 import BallCanvas from "../BallCanvas/page";
 import '../globals.css';
 import { layers} from "../../../constants";
-//!\\mobiles can only handle 8 techs
+
 const Tech = () => {
   return (
     <div className='flex flex-row flex-wrap justify-center gap-10'>

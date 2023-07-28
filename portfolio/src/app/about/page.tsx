@@ -1,8 +1,6 @@
 "use client";
 import React, { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import particlesConfig from "../../../particles-config";
+
 import NavBar from "../navBar/page";
 import Tech from "../front-tech/page";
 import Cards from "../cards/page";
@@ -12,6 +10,7 @@ import Experiences from "../experiences/page";
 import TextSphere from "../tech-sphere/page";
 import Footer from "../Footer/page";
 import BackG from "@/background/page";
+
 export default function About() {
   return (
     <div>
@@ -21,9 +20,9 @@ export default function About() {
           <NavBar />
         </div>
         <div className="aboutTDiv">
-          <h1 className="title">Make it work, make it right, make it fast!</h1>
+          <h1 className="title">Make it work, Make it right, Make it fast!</h1>
 
-          <p className="bio">
+          <p className="bio ">
             Hi, I'm a Full Stack JavaScript Developer who specializes in
             building dynamic and responsive web applications. With a passion for
             coding and problem-solving, I graduated with honors from RebootKamp
@@ -51,18 +50,18 @@ export default function About() {
             I undertake.
           </p>
         </div>
-        <div className="aboutDiv1">
+        <div className="aboutDiv1 mt-20">
           <h1 className="info">3000+</h1>
           <h1 className="infoDis">Hours of coding</h1>
         </div>
-        <div className="aboutDiv2">
+        <div className="aboutDiv2 mt-20 ">
           <h1 id="ten" className="info">
             10+
           </h1>
           <h1 className="infoDis">multi-platform projects</h1>
         </div>
 
-        <div className="skills">
+        <div className="skills ">
           <h1>SKILLS</h1>
         </div>
 
@@ -79,7 +78,7 @@ export default function About() {
             <div id="techGrades" className="mt-20 grid grid-cols-3 gap-10">
               {frontend.map((tech, index) => (
                 <div key={tech.name}>
-                  <Cards index={index} name={tech.name}  icon={tech.icon} />
+                  <Cards index={index} name={tech.name} icon={tech.icon} />
                 </div>
               ))}
             </div>
@@ -89,7 +88,7 @@ export default function About() {
               <div id="techGrades2" className="mt-20 grid grid-cols-3 gap-10">
                 {backEnd.map((tech, index) => (
                   <div key={tech.name}>
-                    <Cards index={index} name={tech.name}  icon={tech.icon} />
+                    <Cards index={index} name={tech.name} icon={tech.icon} />
                   </div>
                 ))}
               </div>
@@ -119,10 +118,10 @@ export default function About() {
               {" "}
               <h1>Soft Skills</h1>
             </div>
-            <div className="spheres mt-20">
+            <div className="spheres mt-20  mb-20 ">
               <TextSphere />
             </div>
-            <div className="education mt-20">
+            <div className="education ">
               <h1>Education & Experiences</h1>
             </div>
             <div>
@@ -130,20 +129,27 @@ export default function About() {
             </div>
             <div className=" firstB">
               <div className="btn btn-two">
-               <a href="/Projects"> <span style={{fontSize:"20px"}}>Check out my projects</span></a>
+                <a href="/Projects">
+                  {" "}
+                  <span style={{ fontSize: "20px" }}>
+                    Check out my projects
+                  </span>
+                </a>
               </div>
             </div>
             <div className="box-2">
               <div className="btn btn-two">
-                <a href="/Contact" target="_blank"><span style={{fontSize:"20px"}} >Hire me !</span></a>
+                <a href="/Contact" target="_blank">
+                  <span style={{ fontSize: "20px" }}>Hire me !</span>
+                </a>
               </div>
             </div>
             <div>
               <Footer style="footer-style" />
             </div>
           </div>
-       </div>
-     </div>
-     </div>
+        </div>
+      </div>
+    </div>
   );
 }

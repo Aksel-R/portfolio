@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 
-//!\\ you need to add clickable links for each technologie
+
 const Skill = ({ url="", x="", y="", width=60 ,height=60}) => {
   return (
     <motion.div
@@ -28,19 +28,7 @@ const Skill = ({ url="", x="", y="", width=60 ,height=60}) => {
 export default function Skills() {
   return (
     <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
-      {/* <motion.div
-        className="flex items-center justify-center rounded-full cursor-pointer"
-        whileHover={{ scale: 1.05 }}
-      
-      >
-        <Image
-          style={{ borderRadius: "0px" }}
-          width={60}
-          height={60}
-          src="/yuxa9EAfarIcX9EK8Ei1JSjwRnP7e0-metaanMtdHMuanBn-.jpg"
-          alt="Profile Image"
-        />
-      </motion.div> */}
+    
       <Skill
         url="/070f2aba-d9d6-4699-b887-9a0f29015b1b.png"
         x="3.5vw"

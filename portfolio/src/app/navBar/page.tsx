@@ -1,19 +1,19 @@
 "use client"
 import '../globals.css';
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+
 import Image from 'next/image';
 import { usePathname } from "next/navigation";
-import { BrowserView, MobileView } from 'react-device-detect';
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
-import MenuIcon from '@mui/icons-material/Menu';
+
 import ClearIcon from '@mui/icons-material/Clear';
-import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
+
 import SideNav from '../SideNav/page';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 interface NavLinkProps {
   href: string;

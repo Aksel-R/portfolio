@@ -4,7 +4,7 @@ import NavBar from '../navBar/page';
 import Footer from '../Footer/page';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
-import { fadeIn, textVariant } from "../../../utils/motion";
+import { fadeIn } from "../../../utils/motion";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import '../globals.css';
 import { projects } from '../../../constants';

@@ -1,12 +1,12 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../../../utils/motion";
+import { fadeIn } from "../../../utils/motion";
 import Image from "next/image";
 interface CardsProps {
   index: number;
   name: string;
-  icon;
+  icon: string;
 }
 
 const Cards: React.FC<CardsProps> = ({ index, name, icon }) => {

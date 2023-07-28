@@ -1,9 +1,18 @@
-
-import React, { useEffect } from "react";
-import TagCloud from "tagcloud"; // Assuming the correct package name is "tagcloud"
+"use client"
+import React, { useEffect, useState } from "react";
+import TagCloud from "tagcloud"; 
 import "../globals.css";
+import { log } from "console";
 
-const TextSphere: React.FC = () => { // Added type annotation for functional component
+const TextSphere: React.FC = () => { 
+  const [r, setR]=useState(0)
+
+
+  
+
+
+ 
+  
   useEffect(() => {
     const container = ".tagcloud";
     const texts = [
@@ -19,12 +28,19 @@ const TextSphere: React.FC = () => { // Added type annotation for functional com
       
     ];
 
-    const options = {
-      radius: 150,
-      maxSpeed: "fast",
-      initSpeed: "normal",
-      keep: true,
-    };
+
+
+
+
+
+console.log(window.navigator.userAgent);
+
+const options = {
+  radius: window.navigator.userAgent.includes("Mobile") ? 150 : 250,
+  maxSpeed: "fast",
+  initSpeed: "normal",
+  keep: true,
+};
 
     TagCloud(container, texts, options);
   }, []);
