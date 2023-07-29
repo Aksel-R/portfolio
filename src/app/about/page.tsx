@@ -50,11 +50,11 @@ export default function About() {
             I undertake.
           </p>
         </div>
-        <div className="aboutDiv1 mt-20">
+        <div className="aboutDiv1 mt-80">
           <h1 className="info">3000+</h1>
           <h1 className="infoDis">Hours of coding</h1>
         </div>
-        <div className="aboutDiv2 mt-20 ">
+        <div className="aboutDiv2 mt-80 ">
           <h1 id="ten" className="info">
             10+
           </h1>

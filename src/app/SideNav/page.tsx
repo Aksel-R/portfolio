@@ -40,13 +40,13 @@ function SideNav(){
          <NavLink href="/about" title="About" className="my-4" />
          </div>
          <div className='pb-4'>
-         <NavLink href="/Projects" title="Projects" className="my-4" />
+         <NavLink href="/projects" title="Projects" className="my-4" />
          </div>
          <div className='pb-4'>
-         <NavLink href="/Articles" title="Articles" className="my-4" />
+         <NavLink href="/articles" title="Articles" className="my-4" />
          </div>
          <div className='pb-4'>
-         <NavLink href="/Contact" title="Contact" className="my-4" />
+         <NavLink href="/contact" title="Contact" className="my-4" />
          </div>
          
 
