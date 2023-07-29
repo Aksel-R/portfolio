@@ -40,7 +40,7 @@ function Details() {
      <p id="des" >Obtained Baccalaureate degree in science of technology </p>
      </div>
      <div className="mt-20">
-     <h1  id="institut"> Superior institut of technology ISET </h1>
+     <h1  id="institut"> Superior institute of technology ISET </h1>
      <Item  year={"2021"}  /> 
      <p id="des"> Studied electical engineering </p>
      </div>

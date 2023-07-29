@@ -21,7 +21,7 @@ const TextSphere: React.FC = () => {
       "Problem-solving",
       "Research skills",
       "Management",
-      "SRUM methadology",
+      "SCRUM methadology",
       "Team player",
       "consistency",
       "commitment",

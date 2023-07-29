@@ -18,14 +18,14 @@ export default function Intro() {
 
   return (
 
-    <div >
-    <div  className="backgroundImage2">
+    <div className='body' >
+    <div  className="backgroundImage2 body">
       <BackG/>
           <NavBar/>
 
-    <div className='intro' >
+    <div className='intro ' >
     
-        <div className='typewriter'>
+        <div className='typewriter body'>
       <Typewriter
   options={{
     strings: ["Welcome, I'm Yassin a FullStack developer", "Bienvenue, je suis Yassin un développeur Full Stack", "ようこそ、私はフルスタック開発者のヤシンです", " مرحبًا ، أنا ياسين مطور متكامل ", "Willkommen, ich bin Yassin, ein Full-Stack-Entwickler"],
@@ -42,7 +42,7 @@ export default function Intro() {
           alt="Profile Image"
         />
       </div>
-      <div className='introB'>
+      <div className='introB '>
       <div className='button-container2' >
   <div className="btn btn-two ">
     <a
@@ -63,7 +63,7 @@ export default function Intro() {
   </div>
 </div>
     </div>
-    <div className='introFooter'>
+    <div className='introFooter '>
     <Footer/>
     </div>
 

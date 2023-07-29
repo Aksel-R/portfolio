@@ -13,13 +13,13 @@ export default function Footer({style=""}) {
     { icon: <LinkedInIcon style={{ fontSize: 60 }} />, url: 'https://www.linkedin.com/in/yassin-rezgui-364960193/' },
     { icon: <GitHubIcon style={{ fontSize: 60 }} />, url: 'https://github.com/Aksel-R' },
     { icon: <FacebookIcon style={{ fontSize: 60 }} />, url: 'https://www.facebook.com/yassin.rezgui.714?mibextid=ZbWKwL' },
-    { icon: <EmailIcon style={{ fontSize: 60 }} />, url: '/' }, 
+    { icon: <EmailIcon style={{ fontSize: 60 }} />, url: '/Contact' }, 
   ];
 
   return (
     <div>
       <footer className={style}>
-        <p style={{ color: "white", fontSize: "90"}}>© 2022 Aksel-R | All Rights Reserved</p>
+        <p style={{ color: "white", fontSize: "14px"}}>© 2022 Aksel-R | All Rights Reserved</p>
 
         <nav>
           <div>
