@@ -1,5 +1,4 @@
 import {
- 
   ReactV,
   chatgpt,
   web,
@@ -11,10 +10,8 @@ import {
   redux,
   tailwind,
   nodejs,
- 
- sreamVerse,
+  sreamVerse,
   figma,
- 
   threejs,
   Bootstrap,
   reactNative,
@@ -23,11 +20,11 @@ import {
   next,
   material,
   vue,
-front,
-back,
-datab,
-mtools,
-express,
+  front,
+  back,
+  datab,
+  mtools,
+  express,
   mongoose,
   sqlz,
   prisma,
@@ -38,14 +35,15 @@ express,
   postGres,
   mysql,
   trello,
-  miro, 
-git,
-valeria,
-zara,
+  miro,
+  git,
+  valeria,
+  zara,
   linkedout,
-  portfolio} from "../public/index"
+  portfolio,
+} from "../public/index";
 
-export const tools=[
+export const tools = [
   {
     name: "Trello",
     icon: trello,
@@ -58,26 +56,26 @@ export const tools=[
     name: "Miro",
     icon: miro,
   },
-]
+];
 
-  export const databases=[
-    {
-      name: "MySql",
-      icon: mysql,
-    },
-    {
-      name: "MongoDB",
-      icon: mongo,
-    },
-    {
-      name: "PostgreSQL",
-      icon: postGres,
-    },
-  ]
-
-export const backEnd=[
+export const databases = [
   {
-    name: "Nodejs",
+    name: "MySQL",
+    icon: mysql,
+  },
+  {
+    name: "MongoDB",
+    icon: mongo,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postGres,
+  },
+];
+
+export const backEnd = [
+  {
+    name: "Node.js",
     icon: nodejs,
   },
   {
@@ -89,12 +87,11 @@ export const backEnd=[
     icon: socket,
   },
   {
-    name: "Json web token",
+    name: "JSON Web Token",
     icon: jwt,
   },
-  
   {
-    name: "fireBase",
+    name: "Firebase",
     icon: firebase,
   },
   {
@@ -109,9 +106,9 @@ export const backEnd=[
     name: "Sequelize ORM",
     icon: sqlz,
   },
-]
+];
 
-export const layers =[
+export const layers = [
   {
     name: "Front-end",
     icon: front,
@@ -121,16 +118,14 @@ export const layers =[
     icon: back,
   },
   {
-    name: "Data bases",
+    name: "Databases",
     icon: datab,
   },
   {
-    name: "Management tools",
+    name: "Management Tools",
     icon: mtools,
   },
-]
-
-
+];
 
 const frontend = [
   {
@@ -162,11 +157,11 @@ const frontend = [
     icon: tailwind,
   },
   {
-    name: "Framer motion",
+    name: "Framer Motion",
     icon: framermotion,
   },
   {
-    name: "Native-base",
+    name: "NativeBase",
     icon: nativebase,
   },
   {
@@ -174,7 +169,7 @@ const frontend = [
     icon: threejs,
   },
   {
-    name: "React-Native",
+    name: "React Native",
     icon: reactNative,
   },
   {
@@ -193,23 +188,20 @@ const frontend = [
     name: "Material UI",
     icon: material,
   },
-
   {
     name: "Vue.JS",
     icon: vue,
   },
-  
-  
-
 ];
 
 const projects = [
-name: "StreamVerse",
+  {
+    name: "StreamVerse",
     description:
-      "StreamVerse is built with cutting-edge technologies to deliver a seamless and engaging user experience. The app is packed with features that allow users to access the latest content stay updated with their favorite shows, and enjoy smooth streaming all in one place.",
+      "StreamVerse is built with cutting-edge technologies to deliver a seamless and engaging user experience. The app is packed with features that allow users to access the latest content, stay updated with their favorite shows, and enjoy smooth streaming all in one place.",
     tags: [
       {
-        name: "React-Native CLI",
+        name: "React Native CLI",
         color: "blue-text-gradient",
       },
       {
@@ -225,7 +217,7 @@ name: "StreamVerse",
         color: "pink-text-gradient",
       },
     ],
-    image: streamVerse,
+    image: sreamVerse,
     source_code_link: "",
   },
   {
@@ -234,7 +226,7 @@ name: "StreamVerse",
       "Mobile app that allows users to create accounts, share their art, offer premium content or subscribe for a monthly fee to access premium content, and chat with others in a vibrant art-sharing community.",
     tags: [
       {
-        name: "React-Native",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
@@ -251,15 +243,13 @@ name: "StreamVerse",
       },
     ],
     image: valeria,
-    source_code_link: "https://github.com/orgs/VALERIA-GALLERY/repositories",
+    source_code_link:
+      "https://github.com/orgs/VALERIA-GALLERY/repositories",
   },
-
-  
- 
   {
-    name: "ZARA clone",
+    name: "ZARA Clone",
     description:
-      "This project is about creating an exact replicat of the famous barnd ZARA's website.",
+      "This project is about creating an exact replica of the famous brand ZARA's website.",
     tags: [
       {
         name: "NextJS",
@@ -296,12 +286,13 @@ name: "StreamVerse",
       },
     ],
     image: linkedout,
-    source_code_link: "https://github.com/orgs/task-force-org/repositories",
+    source_code_link:
+      "https://github.com/orgs/task-force-org/repositories",
   },
   {
-    name: "Personal portfolio",
+    name: "Personal Portfolio",
     description:
-      "In this project i showed my potentials in web developent.",
+      "In this project, I showcased my skills and abilities in web development.",
     tags: [
       {
         name: "TypeScript",
@@ -312,50 +303,48 @@ name: "StreamVerse",
         color: "green-text-gradient",
       },
       {
-        name: "emailjs...",
+        name: "EmailJS...",
         color: "pink-text-gradient",
       },
     ],
     image: portfolio,
     source_code_link: "https://github.com/",
   },
-]
+];
 
 const articles = [
   {
-    name: "React Native vs. React Unveiling the Differences and Similarities.",
+    name: "React Native vs. React: Unveiling the Differences and Similarities",
     description:
-      "In the realm of web and mobile app development, React has emerged as one of the most popular JavaScript libraries ...",
+      "In the realm of web and mobile app development, React has emerged as one of the most popular JavaScript libraries...",
     tags: [
       {
-        name: "React-Native",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
         name: "React",
         color: "green-text-gradient",
-      }
+      },
     ],
     image: ReactV,
-    source_code_link: "https://medium.com/@yassinrezgui/react-native-vs-react-unveiling-the-differences-and-similarities-13010194d9e6",
+    source_code_link:
+      "https://medium.com/@yassinrezgui/react-native-vs-react-unveiling-the-differences-and-similarities-13010194d9e6",
   },
-
-  
- 
   {
     name: "Efficient Web Development with ChatGPT",
     description:
-      "Web development has come a long way in recent years, with innovations in AI and machine learning playing a pivotal role in enhancing user experiences ...",
+      "Web development has come a long way in recent years, with innovations in AI and machine learning playing a pivotal role in enhancing user experiences...",
     tags: [
       {
-        name: "OpenAi chatGPT",
+        name: "OpenAI ChatGPT",
         color: "blue-text-gradient",
-      }
+      },
     ],
     image: chatgpt,
-    
-    source_code_link: "https://medium.com/@yassinrezgui/efficient-web-development-with-chatgpt-51d6858a063c",
+    source_code_link:
+      "https://medium.com/@yassinrezgui/efficient-web-development-with-chatgpt-51d6858a063c",
   },
-]
+];
 
-export {  frontend, projects, articles };
+export { frontend, projects, articles };
