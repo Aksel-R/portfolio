@@ -54,6 +54,16 @@ function Details() {
      <Item   year={"2023"} /> 
      <p id="des">Obtained the certificate of a Full-Stack JavaScript developer</p>
      </div>
+ <div className="mt-20">
+     <h1  id="institut"> Concentrix  </h1>
+     <Item   year={"2024"} /> 
+     <p id="des">Took the position of Xerox software technician</p>
+     </div>
+ <div className="mt-20">
+     <h1  id="institut"> Transcom </h1>
+     <Item   year={"Now"} /> 
+     <p id="des">Data analysis Team Leader</p>
+     </div>
     </>
   );
 }
