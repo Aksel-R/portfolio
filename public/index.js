@@ -41,7 +41,7 @@ import linkedout from "./linked-out.png"
 import ReactV from "./reactjsVSreactnative.jpg"
 import chatgpt from "./chatgpt.jpg"
 import portfolio from "./port.png"
-import streamVerse from "./streamVerse.png"
+import streamVerse from "./streamVerse.jpg"
 export {
 streamVerse,
 chatgpt,
