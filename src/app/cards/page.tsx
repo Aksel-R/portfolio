@@ -28,6 +28,8 @@ const Cards: React.FC<CardsProps> = ({ index, name, icon }) => {
         <Image
           src={icon}
           alt='web-development'
+          width={64}
+          height={64}
           className='w-16 h-16 object-contain'
         />
 
