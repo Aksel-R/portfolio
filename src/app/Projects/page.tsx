@@ -39,7 +39,7 @@ function Cards({
             src={image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
-            layout="fill"
+            fill={true}
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
