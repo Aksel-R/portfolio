@@ -228,7 +228,7 @@ const projects = [
     image: streamVerse,
     source_code_link: "https://github.com/Aksel-R/streamVerse.git",
   },
-    name: "Valeria Gallery",
+    {name: "Valeria Gallery",
     description:
       "Mobile app that allows users to create accounts, share their art, offer premium content or subscribe for a monthly fee to access premium content, and chat with others in a vibrant art-sharing community.",
     tags: [
