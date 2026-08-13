@@ -41,7 +41,7 @@ import {
   zara,
   linkedout,
   portfolio,
-} from "../public/index";
+} from "../public";
 
 export const tools = [
   {
