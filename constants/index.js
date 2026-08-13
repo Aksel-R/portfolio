@@ -11,7 +11,7 @@ import {
   redux,
   tailwind,
   nodejs,
- 
+ streamVerse,
  
   figma,
  
@@ -204,7 +204,30 @@ const frontend = [
 ];
 
 const projects = [
-  {
+  {name: "StreamVerse",
+    description:
+      "StreamVerse is built with cutting-edge technologies to deliver a seamless and engaging user experience. The app is packed with features that allow users to access the latest content stay updated with their favorite shows, and enjoy smooth streaming all in one place.",
+    tags: [
+      {
+        name: "React-Native CLI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Figma",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: streamVerse,
+    source_code_link: "https://github.com/Aksel-R/streamVerse.git",
+  },
     name: "Valeria Gallery",
     description:
       "Mobile app that allows users to create accounts, share their art, offer premium content or subscribe for a monthly fee to access premium content, and chat with others in a vibrant art-sharing community.",
