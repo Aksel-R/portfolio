@@ -10,7 +10,7 @@ import {
   redux,
   tailwind,
   nodejs,
-  sreamVerse,
+  streamVerse,
   figma,
   threejs,
   Bootstrap,
@@ -217,7 +217,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: sreamVerse,
+    image: streamVerse,
     source_code_link: "",
   },
   {
